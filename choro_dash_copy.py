@@ -7,7 +7,7 @@ from dash import dcc, html
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 
-os.chdir(r"C:\Users\dsikk\VSCode\DAD\output")
+
 FILE = "clusters_labeled.csv"
 df = pd.read_csv(FILE, dtype={"fips":str}).drop(columns=['Unnamed: 0'])
 
