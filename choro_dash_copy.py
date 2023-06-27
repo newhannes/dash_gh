@@ -5,8 +5,10 @@ import dash
 from dash import dcc, html
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
+import os
 
 
+os.chdir("C:\Users\dsikk\VSCode\DAD\clusters\maps\dash_gh")
 FILE = "clusters_labeled.csv"
 df = pd.read_csv(FILE, dtype={"fips":str}).drop(columns=['Unnamed: 0'])
 
